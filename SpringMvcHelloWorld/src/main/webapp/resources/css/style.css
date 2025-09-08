@@ -1,0 +1,351 @@
+/* Base Styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f2;
+  color: #5f14ab;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Full height layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Header (Stacked layout) */
+.custom-header {
+  background-color: #a564c6;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Container spacing */
+.custom-header .container {
+  padding: 0 20px;
+}
+
+/* Logo */
+img.logo {
+    width: 200px !important;
+    height: auto !important;
+    padding-left: 20px !important;
+}
+
+/* Search Form */
+.search-form {
+  max-width: 450px;
+  flex-shrink: 1;
+}
+
+.search-input {
+  border: 2px solid #d3a2e8;
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: #5f14ab;
+}
+
+.search-input:focus {
+  border-color: #8a4baf;
+  box-shadow: 0 0 8px rgba(165, 100, 198, 0.4);
+}
+
+.btn-search {
+  background-color: #8a4baf;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 6px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #732d91;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #f3d3ff !important;
+}
+
+/* Responsive spacing */
+@media (max-width: 767px) {
+  .search-form {
+    max-width: 100%;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+
+
+/* Brand Description */
+.brand-description {
+  background-color: #fcefff;
+  color: #5f14ab;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  border-top: 2px solid #d3a2e8;
+  border-bottom: 2px solid #d3a2e8;
+}
+
+/* Footer - stick to bottom */
+footer {
+  background-color: #2f2f2f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* pushes footer down */
+}
+
+/* Product Cards */
+.product-card {
+  background-color: #fff;
+  border: 2px solid #cba0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.col-8.col-md-4 {
+  max-width: 300px;
+}
+
+.product-card .card-body {
+  color: #5f14ab;
+}
+
+.product-card .price {
+  font-weight: 600;
+  color: #8a4baf;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.btn-purple {
+  background-color: #a564c6;
+  border: none;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #8a4baf;
+}
+
+/* About section images */
+.about-section img,
+.row img {
+  max-width: 100%;      /* Don’t exceed container width */
+  max-height: 450px;    /* Limit height */
+  height: auto;         /* Maintain aspect ratio */
+  object-fit: contain;  /* Prevent cropping */
+  display: block;
+  border:rgb(74, 18, 101);
+  margin: 0 auto;
+}
+
+
+/* Contact Form */
+form label {
+  color: #5f14ab;
+  font-weight: 600;
+}
+
+form .form-control:focus {
+  border-color: #a564c6;
+  box-shadow: 0 0 8px rgba(165, 100, 198, 0.5);
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product img {
+  width: 50%;
+  height: auto;
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.brand-title {
+  font-size: 1.4rem;
+}
+
+/* Login Card Styling */
+.login-card {
+  background-color: #fff8f2;
+  border: 2px solid #cba0e0;
+  border-radius: 12px;
+  color: #5f14ab;
+}
+
+.login-card h3 {
+  color: #5f14ab;
+  font-weight: 700;
+}
+
+.login-card .form-label {
+  font-weight: 600;
+}
+
+.login-card .form-control {
+  border: 2px solid #cba0e0;
+}
+
+.login-card .form-control:focus {
+  border-color: #a564c6;
+  box-shadow: 0 0 8px rgba(165, 100, 198, 0.5);
+}
+
+/* Cart Table Styling */
+.table {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.table-bordered {
+  border-color: #cba0e0 !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-color: #cba0e0 !important;
+}
+
+/* Blog Images - Auto Height */
+.blog-img {
+  width: 600px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* About Page Images */
+.about-img {
+  width: 100%;
+  height: auto;              /* Keeps natural aspect ratio */
+  object-fit: cover;         /* Prevents distortion */
+  border-radius: 12px;       /* Smooth rounded corners */
+
+}
+
+
+/* Card Styling */
+.checkout-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 100px;
+}
+
+/* Card Hover Effect */
+.checkout-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(165, 100, 198, 0.2);
+}
+
+/* Form Inputs */
+.checkout-card .form-control,
+.checkout-card .form-select,
+.checkout-card textarea {
+  border-radius: 8px;
+  border: 1px solid #d3c1e6;
+  padding: 12px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.checkout-card .form-control:focus,
+.checkout-card .form-select:focus,
+.checkout-card textarea:focus {
+  border-color: #a564c6;
+  box-shadow: 0 0 8px rgba(165, 100, 198, 0.2);
+  outline: none;
+}
+
+/* Buttons */
+.checkout-card .btn-success {
+  background-color: #a564c6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.checkout-card .btn-success:hover {
+  background-color: #922bb1;
+  transform: scale(1.05);
+}
+
+.checkout-card .btn-outline-secondary {
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.checkout-card .btn-outline-secondary:hover {
+  background-color: #e5d7f0;
+  transform: scale(1.05);
+}
+
+/* Heading */
+.checkout-card h2 {
+  color: #a564c6;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .checkout-card {
+    padding: 20px;
+  }
+}
