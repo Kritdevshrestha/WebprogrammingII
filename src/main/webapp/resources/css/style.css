@@ -1,0 +1,348 @@
+/* ===============================
+   BASE STYLING
+=============================== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f2;
+  color: #5f14ab;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ===============================
+   HEADER + NAVBAR
+=============================== */
+.custom-header {
+  background-color: #a564c6;
+  color: white;
+  padding: 10px 0;
+}
+
+.custom-navbar {
+  background-color: transparent !important;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+/* ===============================
+   PRODUCT IMAGE FIX
+=============================== */
+.product-card img,
+.card img {
+  width: 100%;
+  max-width: 220px;  /* controls image width */
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.search-form {
+  max-width: 450px;
+  flex-shrink: 1;
+}
+
+.search-input {
+  border: 2px solid #d3a2e8;
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: #5f14ab;
+}
+/* Custom button for Products page */
+.btn-royal-purple {
+    background-color: #a564c6;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-royal-purple:hover {
+    background-color: #732d91;
+    color: white;
+}
+
+
+.search-input:focus {
+  border-color: #8a4baf;
+  box-shadow: 0 0 8px rgba(165, 100, 198, 0.4);
+}
+
+.btn-search {
+  background-color: #8a4baf;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 6px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #732d91;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #f3d3ff !important;
+}
+
+@media (max-width: 767px) {
+  .search-form {
+    max-width: 100%;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+/* ===============================
+   HERO SECTION
+=============================== */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #c59de3, #5f14ab);
+}
+
+.text-white {
+  color: white !important;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-royal-purple {
+  color: #5f14ab;
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #f7f7f7;
+}
+
+/* ===============================
+   FEATURED PRODUCTS
+=============================== */
+.bg-soft-gray {
+  background-color: #fff8f2;
+}
+
+.text-gray-800 {
+  color: #333;
+}
+
+.text-royal-purple {
+  color: #5f14ab;
+}
+
+.bg-royal-purple {
+  background-color: #a564c6;
+}
+
+.hover\:bg-lavender:hover {
+  background-color: #dcb7f0;
+}
+
+.rounded-xl {
+  border-radius: 16px;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Tailwind-like grid adjustments for Bootstrap */
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.sm\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+/* Product card hover effect */
+.shadow {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   ABOUT SECTION
+=============================== */
+.text-gray-600 {
+  color: #666;
+}
+
+.leading-relaxed {
+  line-height: 1.6;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+.bg-midnight {
+  background-color: #2f2f2f;
+}
+
+.text-gray-400 {
+  color: #b3b3b3;
+}
+
+.text-gray-300 {
+  color: #d3d3d3;
+}
+
+.hover\:text-lavender:hover {
+  color: #dcb7f0;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Footer Grid */
+@media (max-width: 768px) {
+  footer .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/* ===============================
+   UTILITY CLASSES (Tailwind-like)
+=============================== */
+.max-w-3xl {
+  max-width: 768px;
+}
+
+.max-w-4xl {
+  max-width: 1024px;
+}
+
+.max-w-7xl {
+  max-width: 1280px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Button styling in Hero Section */
+.bg-royal-purple.text-white {
+  text-decoration: none;
+  display: inline-block;
+}
